@@ -1,0 +1,417 @@
+.none {
+        list-style-type: none;
+}
+
+/* ScrollBar START */
+::-webkit-scrollbar{
+        width: 10px;
+}
+::-webkit-scrollbar-thumb{
+        background-color: #49b199;
+}
+/* ScrollBar END */
+
+
+
+/* botao "X" do menu  START*/
+.x{
+        color: black;
+        border: none;
+        padding: 0 10px;
+}
+/* botao "X" do menu  END*/
+
+
+
+/*barra de progresso da pagina START*/
+ .progress-container {
+        width: 100%;
+        height: 7px;
+        background: #ccc;
+        position: fixed;
+        top: 4.5;
+        z-index: 5;
+}
+.progress-container  .progress-bar {
+        height: 7px;
+         background: #49b199;
+         width: 0%;
+        
+  
+}
+/*barra de progresso da pagina END*/
+
+
+/* barra de navegação START */
+.navbar{
+       position: sticky ;
+       top: 0;
+       background-color: #fff;
+       z-index: 2;
+}
+/* barra de navegação END */
+
+
+/* frase "Ir para o Moodle" START */
+.dropdown .ir-moodle{
+        transition: .2s;
+    
+}
+.dropdown .ir-moodle:hover{
+        text-shadow: 1px 1px 9px #49b199;
+}
+/* frase "Ir para o Moodle" END */
+
+
+
+/* estilização na cor dos titulos START*/
+.Titulo{
+        color: #49b199;
+}
+/* estilização na cor dos titulos END*/
+
+
+
+/* titulos e subtitulos fixos na NavBar START */
+.title-fixed{
+        position: fixed;
+        top: 1.2rem;
+        z-index: 2;
+        font-size: 0.8rem;
+        background-color: transparent;
+        text-align: center;
+        display: flex;
+        align-items: center;
+}
+.sub-fixed{
+        align-items: center;
+        top: 1rem;
+        font-size: .7rem;
+}
+.sub-fixed p{
+        color: rgba(0, 0, 0, 0.578);
+}
+/* titulos e subtitulos fixos na NavBar END */
+
+
+
+/* estilizaçaos nos botoes START */
+.container-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+}
+.buttons{
+        display: flex;
+}
+.buttons a{
+        display: block;
+        text-align: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight:bold;
+        color: #fff;
+        margin: 15px;
+        padding: 15px 20px;
+        border: 1px solid #49b199;
+        max-width: 500px;
+        transition: .3s;
+}
+.buttons a:hover{
+        background-color: #1c9478;
+        letter-spacing: 2px;
+}
+/* estilização nos botoes END */
+
+
+
+/* estilização nos links do menu START */
+.sidebar-item{
+        padding: 0 .5rem;
+        margin-left: -1rem !important;
+        position: relative;
+}
+.before{
+      
+        position: relative;
+}
+.before::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        left: 2px;
+        background-color: #1c9478;
+        transition: .4s;
+        z-index: -1;
+}
+
+
+/* 
+.sidebar-item:hover .sidebar-link{
+        color: #fff  !important;
+        transition: .1s !important;
+        margin-left: 4px;
+        font-weight: 500 !important;
+} 
+
+.sidebar-item .sidebar-sub{
+        position: relative;
+        z-index: 10;
+        color: #fff ;
+}*/
+.sidebar-item .sidebar-sub{
+        font-weight: bold;
+        transition: .5s !important;
+        color: black;
+}
+.sidebar-item .sidebar-sub:hover{
+      
+        transition: .1s !important;
+        margin-left: 4px;
+        color: rgba(0, 0, 0, 0.63);
+}
+
+.has-sub{
+        height: 3.5rem;
+        overflow: hidden;
+    
+        text-decoration: none;
+}
+/* .has-sub:hover{
+        height: 10rem;
+}
+.has-sub.sub3{
+        height: 2.9rem;
+        overflow: hidden;
+        transition: .4s;
+}
+.has-sub.sub3:hover{
+        height: 10rem;
+}  */
+/* estilização nos links do menu END */
+
+
+
+/* estilização nas caixas de curiosidade START */
+.ContainerCaixaCuriosidade{
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      
+}
+.ContenCaixaCuriosidade{
+        background: rgb(252, 122, 234);
+        height: 3rem;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: .5s;      
+}
+
+.ContenCaixaCuriosidade:hover{
+        height: auto;
+}
+.CuriosidadeTitulo{
+        color:#fff;
+}
+
+.CuriosidadeTitulo::before{
+        color: #fff;
+        display: inline-block;
+        animation: jump 1.1s infinite;
+}
+.ContenCaixaCuriosidade:hover .CuriosidadeTitulo{
+        border-radius: 20px 20px 0 0;
+}
+
+.ContainerCaixaCuriosidade .CuriosidadeTitulo{
+        padding: 0px 10px;
+        background: rgb(187, 19, 145);
+        border-radius: 20px;
+        flex-direction: column;
+        transition: 01s ease-in-out;
+        overflow: hidden;
+}
+
+
+.ContainerCaixaCuriosidade .CuriosidadeTexto{
+        position:relative;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+     
+}
+
+
+@keyframes jump {
+        0%{
+                transform: translateY(0);
+        }
+        50%{
+                transform: translateY(-.2rem);
+        }
+        100%{
+                transform: translateY(.3rem);
+        }
+}
+/* estilização nas caixas de curiosidade END */
+
+
+
+/* centralizamos o Footer e colocamos uma Anconra q leva ao site da EGP  START */
+footer{
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgba(128, 128, 128, 0.671);
+        margin-top: 4rem;
+        width: 100%;
+}
+.frases-footer{
+        color: gray;
+        transition: .1s !important;
+}
+.frases-footer:hover{
+        text-decoration: underline;
+        color: blue;
+}
+.text-end{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 40rem;
+        width: 100%;
+ }
+ /* centralizamos o Footer e colocamos uma Anconra q leva ao site da EGP  END*/
+
+
+
+ /* back to top START */
+ .scroll-up{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        padding: .3rem .6rem;
+        border-radius: 5px;
+        animation: float 2s infinite ease-in-out;
+        transition: .2s;
+}
+
+.scroll-up i{
+        filter: drop-shadow(3px 1px 1px #49b199);
+        font-size: 3rem;
+        color: black;
+}
+@keyframes float{
+        0%{
+                transform: translateY(0);
+        }
+        50%{
+                transform: translateY(5px);
+        }
+}
+/* back to top END */
+
+
+
+/* responsividade START */
+@media  (max-width:990px){
+         .title-fixed2-1{ 
+                font-size: 2.5vw ;
+                margin-left: -10px;
+        } 
+        .dropdown{
+                font-size: 1.3vw;
+        }
+}
+@media (max-width:768px) {
+        .title-fixed{
+                margin-left: 3rem;
+        }
+        .dropdown{
+                font-size: 0;
+        }
+}
+@media (max-width:766px) {
+        .title-fixed2-1{
+                font-size: 1.5rem;
+        }
+}
+@media (max-width:515px) {
+        .title-fixed2-1{
+                font-size: 4.3vw;
+        }
+}
+@media (max-width:420px){
+        .buttons{
+                display: flex;
+                flex-direction: column;
+        }
+}
+@media (max-width:340px) {
+        .sub-fixed{
+                font-size: 3vw;
+        }
+}
+ @media  (max-width:319px){
+        .title-fixed{
+                font-size: 4vw;
+        }
+        .sub-fixed{
+                font-size: 3vw;
+        }
+}
+/* responsividade END */
+
+
+/* estilização na ultima caixa de texto do tópico 5  START */
+.bd-callout{
+        position: relative;
+        border-left: none;
+        z-index: 1;
+}
+ .bd-callout::before{
+        content: '';
+        background-color: #43833c!important;
+        height: 100%;
+        width: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        border-radius: 3px;
+} 
+.bd-callout:hover::before{
+        width: 100%;
+}
+.bd-callout p{
+        position: relative;
+        z-index: 1;
+        transition: .3s;
+}
+.bd-callout:hover p{
+        color: #fff ;
+}
+/* estilização na ultima caixa de texto do tópico 5  END */
+
+
+
+/* adicionamos um "X" para fechar as imagens contidas nos topicos  START */
+.modal::after{
+        content: 'X';
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 5px 12px;
+
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+}
+/* adicionamos um "X" para fechar as imagens contidas nos topicos  END */
+
